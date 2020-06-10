@@ -4,9 +4,8 @@ import {StyleSheet, View, Text, TextInput, Button} from 'react-native';
 import {loginSPageStyle} from './loginStyles/loginStyles';
 import {connect} from 'react-redux';
 import {userLoginReducers} from '../../store/action/userLoginRegistration';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import GoUserPage from './GoUserPage';
+
+
 
 
 function LoginPage(props, {navigation}) {

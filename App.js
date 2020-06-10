@@ -7,8 +7,6 @@ import watcher from './src/store/saga/index';
 import createSagaMiddleware from 'redux-saga';
 import Home from './src/components/Home';
 
-
-
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(
@@ -16,7 +14,6 @@ const store = createStore(
 	composeEnhancers(applyMiddleware(sagaMiddleware)),
 );
 sagaMiddleware.run(watcher);
-
 
 class App extends Component {
 	render() {

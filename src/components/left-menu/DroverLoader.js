@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import {MenuStyle} from './left-menu-style/leftMenuStyle';
+import LeftMenuLists from './LeftMenueLists';
 
 export default function DroverLoader() {
 	return (
@@ -18,6 +19,7 @@ export default function DroverLoader() {
 				</View>
 
 			</View>
+			<LeftMenuLists/>
 		</>
 	);
 }
